@@ -1,18 +1,14 @@
-<p align="center"><a href="https://anuraghazra.github.io"><img width="80%" src="./assets/gh-readme-header.png" /></a></p>
+<p align="center"><a href="https://nimaibhat.github.io"><img width="80%" src="./assets/gh-readme-header.png" /></a></p>
 
 <br />
 
-I'm a self-taught passionate FrontEnd developer from India 🇮🇳
+I'm a high school student in Columbus, Ohio
 
 **About me**
 
-- 💼 FrontEnd Engineer at [Razorpay](http://razorpay.com/)
-
 - 📈 Built github-readme-stats, verlyjs and more, **50m+** hits • **31K** stars on GitHub
 
-- ❤️ I love writing TypeScript, and building fun experiments on type-level
-
-- 💬 Ask me about anything [here](https://github.com/anuraghazra/anuraghazra/issues)
+- ❤️ I enjoy using different tools to create awesome projects
 
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
@@ -24,7 +20,7 @@ I'm a self-taught passionate FrontEnd developer from India 🇮🇳
 | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=nimaibhat&show_icons=true&include_all_commits=true&theme=buefy&hide_border=true" alt="Nimai's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nimaibhat&layout=compact&theme=buefy&hide_border=true" /></a> |
 | ------------- | ------------- |
 
-#### Top Repositories
+#### Notable Repositories
 
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
