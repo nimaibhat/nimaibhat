@@ -2,11 +2,11 @@
 
 <br />
 
-I'm a high school student in Columbus, Ohio
+I'm a high school student
 
 **About me**
 
-- 📈 Built github-readme-stats, verlyjs and more, **50m+** hits • **31K** stars on GitHub
+- 📈 Built various full-stack websites with multiple architectures, specified in README's
 
 - ❤️ I enjoy using different tools to create awesome projects
 
