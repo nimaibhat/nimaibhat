@@ -24,10 +24,10 @@ I'm a high school student
 
 
 <a href="https://github.com/nimaibhat/dwm">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nimaibhat&repo=github-readme-stats&theme=buefy" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nimaibhat&repo=dwm&theme=buefy" />
 </a>
 <a href="https://github.com/nimaibhat/nimaibhat.github.io">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nimaibhat&repo=anuraghazra.github.io&theme=buefy" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nimaibhat&repo=nimaibhat.github.io&theme=buefy" />
 </a>
 
 <br />
