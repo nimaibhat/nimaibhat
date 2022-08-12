@@ -380,43 +380,6 @@ main {
   font-weight: 600;
 }
 
-.places {
-  display: flex;
-  flex-direction: column;
-  background-color: inherit;
-  text-align: center;
-
-}
-
-.places .places-container {
-
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-}
-
-.places .places-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  background-color: inherit;
-  text-align: center;
-
-}
-
-.about .about-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-}
-
 .contact-me {
   display: flex;
   flex-direction: column;
