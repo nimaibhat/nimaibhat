@@ -18,7 +18,8 @@ body {
   background-color: var(--background-clr);
   --primary-color: #007cc7;
   --primary-color2: #7dce94;
-  zoom: 125%;
+  zoom: 1.25;
+  -ms-zoom: 1.25;
   overflow: auto;
 }
 
