@@ -7,7 +7,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-
 }
 
 body {
@@ -23,7 +22,8 @@ body {
   overflow: auto;
 }
 
-html, body {
+html,
+body {
   margin: 0px;
   height: 100%;
 }
@@ -71,7 +71,7 @@ button {
   body {
     height: 100%;
   }
-  
+
   .header {
     height: 4.25em;
   }
@@ -83,7 +83,7 @@ button {
 
   .menu-list {
     flex-direction: column;
-    padding: .75em 0;
+    padding: 0.75em 0;
     position: absolute;
     right: 0;
     left: 0;
@@ -125,7 +125,7 @@ button {
   .places .places-row {
     flex-wrap: wrap;
   }
-  
+
   .contact-me #my-form .form-group .form-control {
     max-width: 100%;
   }
@@ -274,7 +274,6 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 1em;
-
 }
 
 .classes-title {
@@ -290,7 +289,6 @@ main {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: transform 0.2s linear;
   margin-bottom: 2em;
-
 }
 
 .class:hover {
@@ -306,7 +304,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1.2em 0;
-
 }
 
 .class-stack-item {
@@ -394,8 +391,7 @@ main {
 }
 
 .contact-me p {
-
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -459,4 +455,132 @@ main {
 
 .contact-me #my-form button:active {
   background-color: var(--primary-color);
+}
+
+.portfolios {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  text-align: center;
+}
+.portfolios .portfolio-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-column: center-start / center-end;
+  justify-items: center;
+  gap: 3rem;
+}
+@media (max-width: 1023px) {
+  .portfolios .portfolio-container {
+    gap: 1rem;
+  }
+}
+.portfolios .portfolio {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 2px 5px 15px #0b2b4707;
+  transition: box-shadow 1s ease;
+}
+.portfolios .portfolio:hover {
+  background: linear-gradient(to top left, #f4fcff 0%, #fff 39.74%, #fff 100%);
+}
+@media (max-width: 767px) {
+  .portfolios .portfolio {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .portfolios .portfolio:hover {
+    box-shadow: 0 1rem 2rem 0 rgba(97, 127, 151, 0.43);
+  }
+}
+.portfolios .portfolio img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #b0d2e7;
+  background-color: #ebf1f8;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+@media (max-width: 767px) {
+  .portfolios .portfolio img {
+    pointer-events: none;
+  }
+}
+.portfolios .portfolio .info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch;
+}
+.portfolios .portfolio .info .portfolio-links {
+  display: flex;
+}
+.portfolios .portfolio .info .portfolio-links a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  transition: background-color 0.3s ease;
+  border-radius: 3px;
+  background-color: #246b97;
+  padding: 0.5rem 1.25rem;
+}
+.portfolios .portfolio .info .portfolio-links a.secondary {
+  background-color: #d5dfe9;
+  color: #135b71;
+}
+.portfolios .portfolio .info .portfolio-links a.secondary:hover {
+  background-color: #c0cedb;
+}
+.portfolios .portfolio .info .portfolio-links a:hover {
+  background-color: #4690be;
+}
+.portfolios .portfolio h6 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.375rem;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #246b97;
+}
+.portfolios .portfolio p {
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0.6rem;
+  flex: 1;
+}
+.portfolios .portfolio a {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  color: #2c7e9e;
+}
+.portfolios .portfolio .tags {
+  margin-bottom: 1rem;
+}
+.portfolios .portfolio .tags span {
+  display: inline-block;
+  color: #525b75;
+  background-color: #e6effa;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-right: 5px;
+  font-size: 0.875rem;
 }
