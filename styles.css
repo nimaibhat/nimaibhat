@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+
 }
 
 body {
@@ -18,13 +19,11 @@ body {
   background-color: var(--background-clr);
   --primary-color: #007cc7;
   --primary-color2: #7dce94;
-  zoom: 1.25;
-  -ms-zoom: 1.25;
+  zoom: 125%;
   overflow: auto;
 }
 
-html,
-body {
+html, body {
   margin: 0px;
   height: 100%;
 }
@@ -67,68 +66,6 @@ button {
 @media (max-width: 1023px) {
   h1 {
     font-size: 2.6rem;
-  }
-
-  body {
-    height: 100%;
-  }
-
-  .header {
-    height: 4.25em;
-  }
-
-  .section {
-    margin-top: 4em;
-    overflow: scroll;
-  }
-
-  .menu-list {
-    flex-direction: column;
-    padding: 0.75em 0;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 5em;
-    background-color: var(--background-clr);
-    width: 0;
-    overflow: hidden;
-    transition: width 0.3s ease-in-out;
-    z-index: 99;
-  }
-
-  .display-menu-list {
-    width: 100%;
-    z-index: 99;
-  }
-
-  .menu-list-item {
-    margin: 0.5em 0;
-    z-index: 99;
-  }
-
-  .menu-hamburger {
-    display: flex;
-    margin-left: 1em;
-    margin-top: 0.5em;
-    z-index: 99;
-  }
-
-  .info {
-    align-items: flex-start;
-    margin-top: 2em;
-    margin-bottom: 3em;
-  }
-
-  .skills .skills-row {
-    flex-wrap: wrap;
-  }
-
-  .places .places-row {
-    flex-wrap: wrap;
-  }
-
-  .contact-me #my-form .form-group .form-control {
-    max-width: 100%;
   }
 }
 
@@ -220,7 +157,7 @@ main {
 
 .info {
   flex-direction: column;
-  margin-top: 20vh;
+  margin-top: 25%;
   height: 100%;
 }
 
@@ -269,12 +206,66 @@ main {
   flex-direction: column;
 }
 
+
+@media (max-width: 1024px) {
+  body {
+    height: 100%;
+  }
+  
+  .header {
+    height: 4.25em;
+  }
+
+  .section {
+    margin-top: 4em;
+    overflow: scroll;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    padding: .75em 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 5em;
+    background-color: var(--background-clr);
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    z-index: 99;
+  }
+
+  .display-menu-list {
+    width: 100%;
+    z-index: 99;
+  }
+
+  .menu-list-item {
+    margin: 0.5em 0;
+    z-index: 99;
+  }
+
+  .menu-hamburger {
+    display: flex;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    z-index: 99;
+  }
+
+  .info {
+    align-items: flex-start;
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+}
+
 .classes-grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 1em;
+
 }
 
 .classes-title {
@@ -290,6 +281,7 @@ main {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: transform 0.2s linear;
   margin-bottom: 2em;
+
 }
 
 .class:hover {
@@ -305,6 +297,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1.2em 0;
+
 }
 
 .class-stack-item {
@@ -378,6 +371,56 @@ main {
   font-weight: 600;
 }
 
+
+@media (max-width: 1023px) {
+  .skills .skills-row {
+    flex-wrap: wrap;
+  }
+}
+
+.places {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  text-align: center;
+
+}
+
+.places .places-container {
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.places .places-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+}
+
+@media (max-width: 1023px) {
+  .places .places-row {
+    flex-wrap: wrap;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  text-align: center;
+
+}
+
+.about .about-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -392,7 +435,7 @@ main {
 }
 
 .contact-me p {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   margin-bottom: 1rem;
 }
 
@@ -419,11 +462,17 @@ main {
   width: 100%;
   border-radius: 4px;
   background-color: #ffffff;
-  color: #000000;
+  color: var(--primary-color);
   border: 1px solid #d9e3ee;
   padding: 0 1rem;
   font-weight: 500;
   line-height: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .contact-me #my-form .form-group .form-control {
+    max-width: 100%;
+  }
 }
 
 .contact-me #my-form .form-group .form-control::placeholder {
@@ -466,6 +515,7 @@ main {
   background-color: inherit;
   text-align: center;
 }
+
 .portfolios .portfolio-container {
   margin-top: 2rem;
   display: grid;
@@ -474,11 +524,13 @@ main {
   justify-items: center;
   gap: 3rem;
 }
+
 @media (max-width: 1023px) {
   .portfolios .portfolio-container {
     gap: 1rem;
   }
 }
+
 .portfolios .portfolio {
   padding: 2rem;
   display: flex;
@@ -489,19 +541,23 @@ main {
   box-shadow: 2px 5px 15px #0b2b4707;
   transition: box-shadow 1s ease;
 }
+
 .portfolios .portfolio:hover {
   background: linear-gradient(to top left, #f4fcff 0%, #fff 39.74%, #fff 100%);
 }
+
 @media (max-width: 767px) {
   .portfolios .portfolio {
     margin-bottom: 0;
   }
 }
+
 @media (min-width: 1025px) {
   .portfolios .portfolio:hover {
     box-shadow: 0 1rem 2rem 0 rgba(97, 127, 151, 0.43);
   }
 }
+
 .portfolios .portfolio img {
   display: block;
   max-width: 100%;
@@ -516,20 +572,24 @@ main {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 @media (max-width: 767px) {
   .portfolios .portfolio img {
     pointer-events: none;
   }
 }
+
 .portfolios .portfolio .info {
   display: flex;
   flex-direction: column;
   flex: 1;
   align-self: stretch;
 }
+
 .portfolios .portfolio .info .portfolio-links {
   display: flex;
 }
+
 .portfolios .portfolio .info .portfolio-links a {
   margin-right: 0.5rem;
   text-decoration: none;
@@ -541,16 +601,20 @@ main {
   background-color: #246b97;
   padding: 0.5rem 1.25rem;
 }
+
 .portfolios .portfolio .info .portfolio-links a.secondary {
   background-color: #d5dfe9;
   color: #135b71;
 }
+
 .portfolios .portfolio .info .portfolio-links a.secondary:hover {
   background-color: #c0cedb;
 }
+
 .portfolios .portfolio .info .portfolio-links a:hover {
   background-color: #4690be;
 }
+
 .portfolios .portfolio h6 {
   margin-bottom: 1rem;
   font-weight: 500;
@@ -559,6 +623,7 @@ main {
   text-align: center;
   color: #246b97;
 }
+
 .portfolios .portfolio p {
   line-height: 1.5;
   font-weight: normal;
@@ -567,15 +632,18 @@ main {
   margin-bottom: 0.6rem;
   flex: 1;
 }
+
 .portfolios .portfolio a {
   font-weight: 500;
   font-size: 1rem;
   text-align: left;
   color: #2c7e9e;
 }
+
 .portfolios .portfolio .tags {
   margin-bottom: 1rem;
 }
+
 .portfolios .portfolio .tags span {
   display: inline-block;
   color: #525b75;
