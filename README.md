@@ -1,4 +1,4 @@
-# Hi, I am Nimai Bhat 👨‍💻
+# Hi, I am Nimai Bhat
 I am a Computer Science & Engineering student at The Ohio State University who loves building! I am passionate about taking everyday headaches and fixing them with technology.
 
 ### Have a look at my [website](https://nimaibhat.com/).
